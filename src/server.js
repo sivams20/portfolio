@@ -1,12 +1,15 @@
 const express = require('express');
-const app = express();
 const path = require('path');
-
-app.use(express.static(__dirname + '/dist'));
-
-app.listen(process.env.PORT || 8080);
-
-app.get('/*', function(req, res){
-    res.sendFile(path.join(__dirname + '/dist/portfolio/index.html'));
+ 
+const app = express();
+ 
+// Serve only the static files form the dist directory
+// Replace the '/dist/<to_your_project_name>'
+app.use(express.static(__dirname + '/dist/portfolio'));
+ 
+app.get('*', function(req,res) {
+  // Replace the '/dist/<to_your_project_name>/index.html'
+  res.sendFile(path.join(__dirname + '/dist/portfolio/index.html'));
 });
-console.log('listening');
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
