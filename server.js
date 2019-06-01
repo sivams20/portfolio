@@ -1,7 +1,8 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
- 
+require('dotenv').config();
+
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -16,20 +17,20 @@ app.get('*', function(req,res) {
 // Start the app by listening on the default Heroku port
 
 app.post('/send', function (req, res) {
-  console.log(req);
+  //console.log(req);
   var nodemailer = require('nodemailer');
   var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: '',
-        pass: ''
+        user: process.env.Userkey,
+        pass: process.env.Passkey
     }
   });
 
-  console.log('created');
+  console.log('created',process.env);
   transporter.sendMail({
-  from: '@gmail.com',
-    to: '@gmail.com',
+  from: '',
+    to: '',
     subject: 'hello world!',
     text: 'hello world!'
   });
@@ -37,4 +38,5 @@ app.post('/send', function (req, res) {
   });
 
 app.listen(process.env.PORT || 8080);
+
 
