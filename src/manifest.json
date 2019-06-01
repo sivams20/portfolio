@@ -47,5 +47,10 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "assets": [
+    "src/favicon.ico",
+    "src/assets",
+    "src/manifest.json"
+    ]
 }
