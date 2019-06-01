@@ -4,9 +4,9 @@
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
-  "scope": "/",
-  "start_url": "https://siv-portfolio1.herokuapp.com",
-  "prefer_related_applications": true,
+  "scope": "https://siv-portfolio1.herokuapp.com",
+  "start_url": "/",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
