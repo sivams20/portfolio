@@ -4,8 +4,8 @@
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
-  "start_url": "/index.html",
-  "prefer_related_applications": false,
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
@@ -47,10 +47,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "assets": [
-    "src/favicon.ico",
-    "src/assets",
-    "src/manifest.json"
-    ]
+  ]
 }
