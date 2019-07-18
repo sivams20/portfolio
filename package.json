@@ -28,6 +28,10 @@
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
+  "engines": {
+    "node": "~9.2.0",
+    "npm": "~5.5.1"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.801.0",
     "@angular/cli": "~8.1.0",
