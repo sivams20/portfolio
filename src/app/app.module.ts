@@ -13,7 +13,6 @@ import { AppEducation } from './education/app.education';
 import { AppNetwork } from './network/app.network';
 import { AppContact } from './contact/app.contact';
 import { AppFooter } from './footer/app.footer';
-import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -32,8 +31,7 @@ import { environment } from '../environments/environment';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
