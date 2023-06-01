@@ -8,12 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
       - run: npm install
       - run: npm run build
       - uses: aws-actions/configure-aws-credentials@v1
@@ -21,4 +20,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-1
-      - run: aws s3 sync ./out s3:balu-portfolio
+      - run: aws s3 sync ./out s3://balu-portfolio
