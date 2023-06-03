@@ -1,4 +1,11 @@
+import Navbar from "@/components/navbar";
+
 function Resume() {
-  return <h1>Resume</h1>;
+  return (
+    <div>
+      <Navbar />
+      <h1>Resume</h1>
+    </div>
+  );
 }
 export default Resume;

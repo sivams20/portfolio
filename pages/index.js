@@ -1,11 +1,10 @@
-import Link from "next/link";
+import Navbar from "@/components/navbar";
 
 function Home() {
   return (
     <div>
+      <Navbar />
       <h1>Home</h1>
-      <Link href="/about">About</Link>
-      <Link href="/resume">Resume</Link>
     </div>
   );
 }
