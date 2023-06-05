@@ -7,7 +7,13 @@ function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.picsection}>
-        <Image className={styles.img} src="pic.jpeg" alt="" />
+        <Image
+          src="/pic.jpeg"
+          alt=""
+          width="50"
+          height="50"
+          className={styles.img}
+        />
         <Link href="/" className={styles.nav}>
           Baluraj
         </Link>
