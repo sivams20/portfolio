@@ -6,7 +6,7 @@ function Header() {
     <div className={styles.header}>
       <div className={styles.picsection}>
         <img className={styles.img} src="pic.jpeg" />
-        <a href="" className={styles.nav}>
+        <a href="/" className={styles.nav}>
           Baluraj
         </a>
       </div>
