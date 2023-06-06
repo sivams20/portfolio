@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.content {
+  width: 70%;
+}
+.title {
+  letter-spacing: 0em;
+  padding-bottom: 30px;
+  font-size: clamp(2.625rem, 1.2857rem + 3.5714vw, 4rem);
+  font-weight: 800;
+  line-height: 1.11429;
+  font-family: "Segoe UI";
+}
