@@ -7,9 +7,11 @@
 }
 
 .content {
+  max-width: 900px;
+  letter-spacing: 0em;
+  padding-bottom: 30px;
   font-size: 55px;
   font-weight: 800;
   line-height: 1.11429;
   font-family: "Segoe UI";
-  max-width: 750px;
 }

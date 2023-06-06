@@ -10,9 +10,6 @@ function Navbar() {
       <Link href="/resume" className={styles.navitem}>
         Resume
       </Link>
-      <Link href="/projects" className={styles.navitem}>
-        Projects
-      </Link>
     </div>
   );
 }

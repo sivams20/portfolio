@@ -11,8 +11,10 @@
 }
 
 .title {
-  font-size: 35px;
-  font-weight: 500;
+  font-size: 45px;
+  letter-spacing: 0em;
+  color: rgb(66, 66, 66);
+  font-weight: 800;
+  line-height: 1.11429;
   font-family: "Segoe UI";
-  margin: 20px;
 }
