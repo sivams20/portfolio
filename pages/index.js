@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className={styles.container}>
       <Image
-        src="/pic.jpeg"
+        src="https://sivams20.github.io/portfolio/pic.jpeg"
         alt=""
         className={styles.img}
         width="250"

@@ -8,7 +8,7 @@ function Header() {
     <div className={styles.header}>
       <div className={styles.picsection}>
         <Image
-          src="/pic.jpeg"
+          src="https://sivams20.github.io/portfolio/pic.jpeg"
           alt=""
           width="50"
           height="50"
